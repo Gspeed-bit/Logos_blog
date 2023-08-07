@@ -1,115 +1,76 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Header from "../components/header";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
+      {" "}
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Living_Logos</title>
+        <link rel="icon" href="/vercel.png" />
       </Head>
+      <div className={styles.home_section}>
+        <div className={styles.section}>
+          <Header />
 
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+          <p className={styles.description}>
+            At Living Logos, we believe in the power of the Word to transform
+            lives. Our church is a community where faith comes alive, and
+            individuals grow together in their spiritual journey. We invite you
+            to join us on this path of discovery, fellowship, and service.
+          </p>
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+          <div className={styles.grid}>
+            <a
+              href="https://www.instagram.com/living_logos/"
+              className={styles.card}
+            >
+              <h3> Upcoming Events: &rarr;</h3>
+              <p>
+                Stay connected with our vibrant community by checking out our
+                upcoming eventsFrom inspiring sermons to engaging workshops...
+              </p>
+            </a>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <a
+              href="https://www.instagram.com/living_logos/"
+              className={styles.card}
+            >
+              <h3> Worship Services: &rarr;</h3>
+              <p>
+                Experience the presence of God through our heartfelt worship
+                services. Join us as we gather to lift our...
+              </p>
+            </a>
+            <a
+              href={"./logos/"}
+              className={styles.card}
+            >
+              <h3> Connect Groups: &rarr;</h3>
+              <p>
+                Building strong relationships is a cornerstone of our church.
+                Our Connect Groups provide a space for deeper connections...
+              </p>
+            </a>
+            <a
+              href="https://www.instagram.com/living_logos/"
+              className={styles.card}
+            >
+              <h3> Children and Youth:&rarr;</h3>
+              <p>
+                Our younger members are the future of our church. We offer
+                engaging programs that nurture their spiritual growth...
+              </p>
+            </a>
+          </div>
+          <p className={styles.description}>
+            Join us at Living Logos and become a part of our dynamic faith
+            community. Together, we're discovering the richness of God's Word
+            and living it out in our daily lives.
+          </p>
         </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
-  )
+      </div>
+    </>
+  );
 }

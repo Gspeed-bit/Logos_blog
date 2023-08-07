@@ -1,3 +1,4 @@
+/* Styling for a container that spans at least the full viewport height */
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -7,48 +8,109 @@
   align-items: center;
 }
 
+/* Styling for a layout container with flex and alignment */
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for a section with width, margin, and text alignment */
+.section {
+  width: 90%;
+  line-height: 2;
+  margin: 1.5rem auto;
+  text-align: justify;
+}
+
+/* Styling for links within titles with color and text decoration */
 .title a {
   color: #0070f3;
   text-decoration: none;
 }
 
+/* Styling for a centered footer */
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  color: #0070f3;
+}
+
+/* Styling for a navigation bar with flex layout */
+.navbar {
+  display: flex;
+  color: #0070f3;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for the navigation container with border bottom */
+.nav_container {
+  width: 90%;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+/* Styling for navigation links */
+.nav_link {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+/* Styling for links within titles on hover, focus, and active */
 .title a:hover,
 .title a:focus,
 .title a:active {
-  text-decoration: underline;
+  text-decoration: underline solid 2px;
 }
 
+/* Styling for title elements */
 .title {
   margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3.6rem;
+  line-height: 1.5;
+  font-size: 2.6rem;
 }
 
+/* Styling for centered titles */
 .title {
   text-align: center;
 }
 
+/* Styling for a centered logo with space around */
+.titleLogo {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Styling for title and description alignment */
 .title,
 .description {
   text-align: center;
 }
 
-
+/* Styling for a description with line height and font size */
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
 }
 
+/* Styling for a flex container with center alignment */
 .grid {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
-  max-width: 800px;
+  max-width: 100%;
   margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
+/* Styling for a card element with padding, border, and transition */
 .card {
   margin: 1rem;
   flex-basis: 45%;
@@ -56,36 +118,165 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 2px solid #0070f3;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
+/* Styling for card hover, focus, and active states */
 .card:hover,
 .card:focus,
 .card:active {
   color: #0070f3;
-  border-color: #0070f3;
+  border-color: #fff;
 }
 
+/* Styling for card title */
 .card h3 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
 }
 
+/* Styling for card paragraphs */
 .card p {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
+/* Styling for a centered container */
+.centerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 80vh; /* This will center the content vertically on the page */
 }
 
+/* Styling for an error message */
+.error {
+  width: 80%;
+  font-size: 2em;
+  line-height: 2;
+  padding: 3rem;
+  text-align: center;
+}
+
+/* Styling for a container with logos */
+.logosContainer {
+  width: 80%;
+
+  margin: 2rem auto;
+}
+
+/* Styling for a contact list container */
+.contactList {
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #fff;
+  text-align: start;
+}
+.contactList h4 {
+padding: 10px;
+}
+
+/* Styling for hovered contact list items */
+.contactList h4:hover {
+  border-width: 0 0 0 5px;
+  border-style: solid;
+  border-color: #0070f3;
+}
+
+/* Styling for a modal overlay */
+.modal {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+/* Styling for the details container */
+.detailsContainer {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+}
+
+/* Styling for span elements in the details container */
+.detailsContainer span {
+  color: #0070f3;
+  font-weight: 900;
+}
+
+/* Media query for smaller screens */
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
 }
+
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  .nav_link {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  .section {
+    width: 95%;
+    margin: 1rem auto;
+    font-size: 1rem;
+  }
+
+
+
+ 
+  .grid {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+ 
+  .card {
+    flex-basis: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+
+  .title {
+    font-size: 2rem;
+  }
+.detailsContainer {
+    padding: 10px; 
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+    .centerContainer {
+    padding: 20px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center content for smaller screens */
+  }
+
+  .error {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+  
+}
+

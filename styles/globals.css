@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #d3d48c;
+font-family: "Nunito";
 }
 
 a {
   color: inherit;
   text-decoration: none;
+    color: #0070f3;
 }
 
 * {
@@ -16,7 +19,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -25,6 +28,7 @@ h2,
 p,
 ul {
   margin: 0;
+  
 }
 
 ul {
