@@ -39,9 +39,9 @@ import Styles from "../../styles/Home.module.css";
 // };
 
 // Component to display user details
-const Details = ({ list }) => {
+const Details = () => {
   // Destructure the user details from the props
-  const { id, name, email, address } = list;
+  // const { id, name, email, address } = list;
 
   return (
     <div className={Styles.container}>
