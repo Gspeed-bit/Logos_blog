@@ -190,9 +190,11 @@ min-height: 150px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   background-color: #fff;
   text-align: start;
+
 }
 .contactList h4 {
 padding: 10px;
+  color: #0070f3;
 }
 
 /* Styling for hovered contact list items */
@@ -229,6 +231,11 @@ padding: 10px;
 .detailsContainer span {
   color: #0070f3;
   font-weight: 900;
+}
+
+.contactDetails{
+  margin: 1rem;
+
 }
 
 
